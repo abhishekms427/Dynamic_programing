@@ -1,12 +1,12 @@
 #include<stdio.h>
-int count=0;
-int t[4][7];
+
+int t[4][7]; // row = n+1, column = w+1
 
 int max(int a,int b){
     return a<b?b:a;
 }
 int kp(int wt[],int pr[],int w,int n){
-    count++;
+    
     if(w==0||n==0){
         return 0;
     }
